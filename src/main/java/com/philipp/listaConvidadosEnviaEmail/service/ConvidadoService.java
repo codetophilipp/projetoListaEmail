@@ -33,10 +33,10 @@ public class ConvidadoService {
 			Email email = new SimpleEmail();
 			email.setHostName("smtp.googlemail.com");
 			email.setSmtpPort(465);
-			email.setAuthenticator(new DefaultAuthenticator("codetophilipp@gmail.com", "Charlie88;"));
+			email.setAuthenticator(new DefaultAuthenticator("seu@email", "suaSenha"));
 			email.setSSLOnConnect(true);
 
-			email.setFrom("codetophilipp@gmail.com");
+			email.setFrom("seu@email");
 			email.setSubject("Você foi convidado pelo ListaVIP");
 			email.setMsg("Olá " + nome + ". Você acaba de ser convidado pelo ListaVIP.");
 			email.addTo(emailDestinatario);
